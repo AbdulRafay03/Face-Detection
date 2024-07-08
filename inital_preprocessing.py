@@ -11,7 +11,9 @@ class inital_preprocessing:
     def __init__(self, folderpath):
         self.folderpath = folderpath
         self.__check_folder_exists()
-
+        
+        self.output_path = folderpath + "_Split"
+        self.split(self.output_path)
 
     #check if the folder path exists
     def __check_folder_exists(self):

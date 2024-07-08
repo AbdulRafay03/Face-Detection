@@ -1,1 +1,20 @@
-2024-07-08 17:28:41.520|20504|INFO|logger->__check_folder_exists():22 -> Dataset Folder Found
+2024-07-08 19:50:26.277|5044|INFO|logger->__check_folder_exists():24 -> Dataset Folder Found
+2024-07-08 19:51:06.510|5044|INFO|logger->split():56 -> covering_face train set  done
+2024-07-08 19:51:15.774|5044|INFO|logger->split():58 -> covering_face validation set  done
+2024-07-08 19:51:33.843|5044|INFO|logger->split():60 -> covering_face test set  done
+2024-07-08 19:51:36.909|5044|INFO|logger->split():56 -> showing_face train set  done
+2024-07-08 19:51:37.732|5044|INFO|logger->split():58 -> showing_face validation set  done
+2024-07-08 19:51:40.444|5044|INFO|logger->split():60 -> showing_face test set  done
+2024-07-08 19:51:40.444|5044|INFO|logger-><module>():12 -> Initial preprocessing done.
+2024-07-08 19:51:40.445|5044|INFO|logger->__check_folder_exists():39 -> Input Folder Found
+2024-07-08 19:51:40.445|5044|INFO|logger->__check_folder_exists():39 -> Input Folder Found
+2024-07-08 19:51:40.445|5044|INFO|logger->__processing():50 -> E:\Projets\face\train
+2024-07-08 19:54:23.903|5044|INFO|logger->__init__():26 -> train processed
+2024-07-08 19:54:23.951|5044|INFO|logger->__init__():28 -> train Loader created
+2024-07-08 19:54:23.952|5044|INFO|logger->__processing():50 -> E:\Projets\face\test
+2024-07-08 19:55:00.779|5044|INFO|logger->__init__():26 -> test processed
+2024-07-08 19:55:00.786|5044|INFO|logger->__init__():28 -> test Loader created
+2024-07-08 19:55:00.787|5044|INFO|logger->__processing():50 -> E:\Projets\face\val
+2024-07-08 19:55:33.158|5044|INFO|logger->__init__():26 -> val processed
+2024-07-08 19:55:33.167|5044|INFO|logger->__init__():28 -> val Loader created
+2024-07-08 19:55:33.167|5044|INFO|logger-><module>():17 -> DataLoaders created
