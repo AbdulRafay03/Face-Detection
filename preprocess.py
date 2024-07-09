@@ -11,7 +11,7 @@ class preprocess:
 
     DataLoaders = []
 
-    def __init__(self , input_path,output_path,batchSize):
+    def __init__(self , input_path,output_path,batchSize, processing_required):
         self.input = input_path
         self.output = output_path
         self.batch_size = batchSize
@@ -21,12 +21,17 @@ class preprocess:
 
         self.target_size = (224, 224) # Define the target size for images
 
-        for i in ['train' , 'test' , 'val']:
-            out = self.__processing(i)
-            logger.info(f"{i} processed")
-            self.DataLoaders.append(self.__createLoader(out))
-            logger.info(f"{i} Loader created")
-
+        if processing_required:
+            for i in ['train' , 'test' , 'val']:
+                out = self.__processing(i)
+                logger.info(f"{i} processed")
+                self.DataLoaders.append(self.createLoader(out))
+                logger.info(f"{i} Loader created")
+        else:
+            for i in ['train' , 'test' , 'val']:
+                out = os.path.join(output_path , i)
+                self.DataLoaders.append(self.createLoader(out))
+                logger.info(f"{i} Loader created")
 
 
 
@@ -36,7 +41,7 @@ class preprocess:
             if not os.path.exists(path):
                 raise FileNotFoundError(f"Folder '{path}' does not exist.")
             else:
-                logger.info("Input Folder Found")
+                logger.debug("Input Folder Found")
         except FileNotFoundError as e:
             logger.exception("Input Folder Not Found" , exc_info=True)
 
@@ -71,7 +76,7 @@ class preprocess:
         return output_path
         
 
-    def __createLoader(self,input_path):
+    def createLoader(self,input_path):
         
         data_dir = input_path
 

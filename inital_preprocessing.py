@@ -21,7 +21,7 @@ class inital_preprocessing:
             if not os.path.exists(self.folderpath):
                 raise FileNotFoundError(f"Folder '{self.folderpath}' does not exist.")
             else:
-                logger.info("Dataset Folder Found")
+                logger.debug("Dataset Folder Found")
         except FileNotFoundError as e:
             logger.exception("Folder Not Found" , exc_info=True)
 
