@@ -1,8 +1,13 @@
 # main.py
 from preprocess import preprocess
 from inital_preprocessing import inital_preprocessing
+from model import EfficientNetB0
 from logger import setup_logging
 import os
+import torch
+import torch.nn as nn
+from efficientnet_pytorch import EfficientNet
+import torch.optim as optim
 
 logger = setup_logging('application.log') # setting up logger
 dataset_dir = r"E:\Projets\face\FMD_DATASET" #Dataset path
@@ -27,6 +32,11 @@ pre = preprocess(new_input, face_folder , 32, req)
 logger.info('DataLoaders Ready')
 loaders = pre.DataLoaders # dataLoaders ready
 
+
+#define model
+model = EfficientNetB0(num_classes=2)  # Change num_classes according to your dataset
+model.training(train_loader=loaders[0] , val_loader=loaders[1] ,
+                epochs=10 , output_path=face_folder)
 
 
 
