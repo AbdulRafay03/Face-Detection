@@ -22,7 +22,7 @@ class inital_preprocessing:
                 raise FileNotFoundError(f"Folder '{self.folderpath}' does not exist.")
             else:
                 logger.debug("Dataset Folder Found")
-        except FileNotFoundError as e:
+        except x as e:
             logger.exception("Folder Not Found" , exc_info=True)
 
     #split the data into train test and validation sets and save them in a new folder

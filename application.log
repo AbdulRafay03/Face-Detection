@@ -1,8 +1,0 @@
-2024-07-09 13:06:40.725|2916|INFO|logger-><module>():11 -> DataSet already Split
-2024-07-09 13:06:40.725|2916|INFO|logger-><module>():20 -> Data already processed
-2024-07-09 13:06:40.725|2916|INFO|logger->__check_folder_exists():44 -> Input Folder Found
-2024-07-09 13:06:40.725|2916|INFO|logger->__check_folder_exists():44 -> Input Folder Found
-2024-07-09 13:06:41.264|2916|INFO|logger->__init__():34 -> train Loader created
-2024-07-09 13:06:41.460|2916|INFO|logger->__init__():34 -> test Loader created
-2024-07-09 13:06:41.710|2916|INFO|logger->__init__():34 -> val Loader created
-2024-07-09 13:06:41.710|2916|INFO|logger-><module>():27 -> DataLoaders Ready
