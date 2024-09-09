@@ -1,4 +1,4 @@
-### Project Title: **Face Detection and Classification Using Deep Learning**
+**Face Detection and Classification Using Deep Learning**
 
 
 ### Project Overview:
