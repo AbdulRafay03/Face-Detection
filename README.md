@@ -10,7 +10,7 @@ This project involves building a machine learning pipeline to classify images in
 
 - Original Dataset: https://www.kaggle.com/datasets/shiekhburhan/face-mask-dataset
 - Modified Dataset: https://www.kaggle.com/datasets/shaikhabdulrafay03/face-dectection/data
-The dataset used is a modified version of the Kaggle Face Mask Dataset, which has been adapted to include only two classes. It contains 14,000 images, making it a substantial dataset for training and testing the models.
+- The dataset used is a modified version of the Kaggle Face Mask Dataset, which has been adapted to include only two classes. It contains 14,000 images, making it a substantial dataset for training and testing the models.
 
 1. **Data Preprocessing**:
    - Images are read from a dataset, resized to a uniform size, and preprocessed using Gaussian blur and other augmentations (rotation, flipping).
