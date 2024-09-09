@@ -5,6 +5,12 @@
 This project involves building a machine learning pipeline to classify images into two categories: **showing face** and **covering face**. The project utilizes deep learning models to perform classification and includes comprehensive preprocessing, training, validation, and performance logging mechanisms.
 
 ### Key Components:
+
+Dataset:
+https://www.kaggle.com/datasets/shiekhburhan/face-mask-dataset
+
+The dataset used is a modified version of the Kaggle Face Mask Dataset, which has been adapted to include only two classes. It contains 14,000 images, making it a substantial dataset for training and testing the models.
+
 1. **Data Preprocessing**:
    - Images are read from a dataset, resized to a uniform size, and preprocessed using Gaussian blur and other augmentations (rotation, flipping).
    - The dataset is split into training, validation, and test sets based on configurable ratios.
